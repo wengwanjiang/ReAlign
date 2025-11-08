@@ -1,6 +1,6 @@
 # ReAlign: Text-to-Motion Generation via Step-Aware Reward-Guided Alignment (AAAI 2026)
 
-*   Wanjiang Weng<sup>\*</sup>, Xiaofeng Tan**<sup>\*</sup>, Junbo Wang, Guo-Sen Xie, Pan Zhou, Hongsong Wang<sup>†</sup>
+*   Wanjiang Weng<sup>\*</sup>, Xiaofeng Tan<sup>\*</sup>, Junbo Wang, Guo-Sen Xie, Pan Zhou, Hongsong Wang<sup>†</sup>
 
 <sup>\*</sup> Equal Contribution  
 <sup>†</sup> Corresponding Author
