@@ -1,6 +1,6 @@
 <h1 align="center"><strong>ReAlign: Text-to-Motion Generation via Step-Aware Reward-Guided Alignment</strong></h1>
 <p align="center">
- <a href='mailto:wjweng@seu.edu.cn' target='_blank'>Wanjiang Weng<sup>*</sup></a>&emsp;
+ <a href='https://github.com/wengwanjiang' target='_blank'>Wanjiang Weng<sup>*</sup></a>&emsp;
  <a href='https://xiaofeng-tan.github.io/' target='_blank'>Xiaofeng Tan<sup>*</sup></a>&emsp;
  Junbo Wang&emsp;
  Guo-Sen Xie&emsp;
