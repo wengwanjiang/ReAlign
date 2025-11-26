@@ -20,7 +20,7 @@
   </a>
 </p>
 
-> **TL;DR:** We propose **ReAlign**, a *plug-and-play reward-guided alignment strategy* for text-to-motion generation and retrieval, which explicitly enhances both semantic consistency and motion realism throughout the denoising process.
+> **TL;DR:** We propose **ReAlign**, a *plug-and-play reward-guided alignment strategy* for text-to-motion generation, which explicitly enhances both semantic consistency and motion realism throughout the denoising process.
 
 This repository offers the official Pytorch code for this paper. The code will be released before the conference of AAAI-26.
 
