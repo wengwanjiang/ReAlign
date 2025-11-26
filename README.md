@@ -7,8 +7,8 @@
  Pan Zhou&emsp;
  Hongsong Wang<sup>†</sup>&emsp;
   <br>
-  *Indicates Equal Contribution&emsp;
-  †Indicates Corresponding Author
+  *Equal Contribution&emsp;
+  †Corresponding Author
 </p>
 
 <p align="center">
