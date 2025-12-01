@@ -18,6 +18,8 @@
   <a href="https://arxiv.org/abs/2511.19217">
     <img src="https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow" alt="Paper PDF on arXiv">
   </a>
+ <a href='https://wengwanjiang.github.io/ReAlign-page'>
+  <img src='https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&logo=Google%20chrome&logoColor=%23df5b46'></a> 
 </p>
 
 > **TL;DR:** We propose **ReAlign**, a *plug-and-play reward-guided alignment strategy* for text-to-motion generation, which explicitly enhances both semantic consistency and motion realism throughout the denoising process.
@@ -29,11 +31,11 @@ If you have any questions, feel free to contact Wanjiang Weng (wjweng@seu.edu.cn
 
 ## 📣 News
 - **[2025/11]** The paper has been publicly released.
-- **[2025/11]** ReAlign has been officially accepted by *AAAI 2026*! 🎉
+- **[2025/11]** *ReAlign* has been officially accepted by *AAAI 2026*! 🎉
 
 ## 📆 Plan
 - [x] Release early version.
-- [x] Release [final version](https://arxiv.org/abs/2412.05095).
+- [x] Release [final version](https://arxiv.org/abs/2511.19217).
 - [ ] Release code for T2M: 
   - [ ] Release environment guidance.
   - [ ] Release evaluation code.
