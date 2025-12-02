@@ -38,9 +38,9 @@ If you have any questions, feel free to contact Wanjiang Weng (wjweng@seu.edu.cn
 - [x] Release [final version](https://arxiv.org/abs/2511.19217).
 - [ ] Release code for T2M: 
   - [ ] Release environment guidance.
-  - [ ] Release evaluation code.
+  - [x] Release evaluation code.
   - [ ] Release inference code.
-  - [ ] Release training code.
+  - [x] Release training code.
   - [x] Release pretrained model weights.
 
 
@@ -65,8 +65,8 @@ If you have any questions, feel free to contact Wanjiang Weng (wjweng@seu.edu.cn
   <tr>
     <td>KIT-ML</td>
     <td>
-      <a href="https://1drv.ms/">Link</a>,
-      <a href="https://pan.baidu.com/s/1HHux8t_cCaENw9_ybrGIOg">Link (passwd: 1234)</a>
+      <a href="https://1drv.ms/">OneDrive</a>,
+      <a href="https://pan.baidu.com/s/1HHux8t_cCaENw9_ybrGIOg">BaiduNetDisk (passwd: 1234)</a>
     </td>
     <td>T2M: 52.84%, M2T: 52.98%</td>
   </tr>
