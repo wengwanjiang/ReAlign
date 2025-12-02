@@ -1,0 +1,35 @@
+checkpoints
+deps
+logs
+datasets/humanml3d
+datasets/kit-ml
+.vscode
+assets
+run.sh
+ggit.sh
+
+# Python 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python 虚拟环境
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# 安装包
+*.egg
+*.egg-info
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 其他缓存文件
+.cache
+.pytest_cache
+.mypy_cache
