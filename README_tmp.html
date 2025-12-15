@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>README.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/tanxiaofeng/Documents/GitHub/ReAlign/R%3A%5C2.Travail%5C1.Enseignement%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css"><link rel="stylesheet" href="file:///Users/tanxiaofeng/Documents/GitHub/ReAlign/D%3A%5Crdaros%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css">
+</head>
+
+<body>
+    <h1 align="center"><strong>ReAlign: Text-to-Motion Generation via Step-Aware Reward-Guided Alignment</strong></h1>
+<p align="center">
+ <a href="https://github.com/wengwanjiang" target="_blank">Wanjiang Weng<sup>*</sup></a>&#x2003;
+ <a href="https://xiaofeng-tan.github.io/" target="_blank">Xiaofeng Tan<sup>*</sup></a>&#x2003;
+ Junbo Wang&#x2003;
+ Guo-Sen Xie&#x2003;
+ Pan Zhou&#x2003;
+ Hongsong Wang<sup>&#x2020;</sup>&#x2003;
+  <br>
+  *Equal Contribution&#x2003;
+  &#x2020;Corresponding Author
+</p>
+<p align="center">
+  <a href="https://aaai.org/conference/aaai/aaai-26/">
+    <img src="https://img.shields.io/badge/AAAI-2026-138D75" alt="AAAI 2026">
+  </a>
+  <a href="https://arxiv.org/abs/2511.19217">
+    <img src="https://img.shields.io/badge/Paper-PDF-yellow?style=flat&amp;logo=arXiv&amp;logoColor=yellow" alt="Paper PDF on arXiv">
+  </a>
+ <a href="https://wengwanjiang.github.io/ReAlign-page">
+  <img src="https://img.shields.io/badge/Project-Page-%23df5b46?style=flat&amp;logo=Google%20chrome&amp;logoColor=%23df5b46"></a> 
+</p>
+<blockquote>
+<p><strong>TL;DR:</strong> We propose <strong>ReAlign</strong>, a <em>plug-and-play reward-guided alignment strategy</em> for text-to-motion generation, which explicitly enhances both semantic consistency and motion realism throughout the denoising process.</p>
+</blockquote>
+<p>This repository offers the official Pytorch code for this paper. The code will be released before the conference of AAAI-26.</p>
+<p>If you have any questions, feel free to contact Wanjiang Weng (wjweng@seu.edu.cn) or Xiaofeng Tan (xiaofengtan@seu.edu.cn).</p>
+<h2 id="%F0%9F%93%A3-news">📣 News</h2>
+<ul>
+<li><strong>[2025/12]</strong> The code has been released! 🚀</li>
+<li><strong>[2025/11]</strong> The paper has been publicly released.</li>
+<li><strong>[2025/11]</strong> <strong>ReAlign</strong> has been officially accepted by <em>AAAI 2026</em>! 🎉</li>
+</ul>
+<h2 id="%F0%9F%93%86-plan">📆 Plan</h2>
+<ul>
+<li><input type="checkbox" id="checkbox0" checked="true"><label for="checkbox0">Release early version.</label></li>
+<li><input type="checkbox" id="checkbox1" checked="true"><label for="checkbox1">Release </label><a href="https://arxiv.org/abs/2511.19217">final version</a>.</li>
+<li><input type="checkbox" id="checkbox2" checked="true"><label for="checkbox2">Release environment guidance.</label></li>
+<li><input type="checkbox" id="checkbox3" checked="true"><label for="checkbox3">Release evaluation code.</label></li>
+<li><input type="checkbox" id="checkbox4" checked="true"><label for="checkbox4">Release training code.</label></li>
+<li><input type="checkbox" id="checkbox5" checked="true"><label for="checkbox5">Release pretrained model weights.</label></li>
+</ul>
+<h2 id="model-zoo">Model Zoo</h2>
+<table>
+  <tr>
+    <th>Model Name</th>
+    <th>Dataset</th>
+    <th>Download Link</th>
+    <th>Retrieval Performance (R@1)</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Step-Aware Reward Model</td>
+    <td>HumanML3D</td>
+    <td>
+      <a href="https://1drv.ms/">OneDrive</a>,
+      <a href="https://pan.baidu.com/s/1HHux8t_cCaENw9_ybrGIOg">BaiduNetDisk (passwd: 1234)</a>
+    </td>
+    <td>T2M: 67.59%, M2T: 68.94%</td>
+  </tr>
+  <tr>
+    <td>KIT-ML</td>
+    <td>
+      <a href="https://1drv.ms/">OneDrive</a>,
+      <a href="https://pan.baidu.com/s/1HHux8t_cCaENw9_ybrGIOg">BaiduNetDisk (passwd: 1234)</a>
+    </td>
+    <td>T2M: 52.84%, M2T: 52.98%</td>
+  </tr>
+</table>
+<h2 id="environment-setup">Environment Setup</h2>
+<h3 id="1-create-conda-environment">1. Create Conda Environment</h3>
+<pre class="hljs"><code><div>conda create -n realign python=3.10 -y
+conda activate realign
+</div></code></pre>
+<h3 id="2-install-dependencies">2. Install Dependencies</h3>
+<pre class="hljs"><code><div><span class="hljs-comment"># Install PyTorch (CUDA 11.8)</span>
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
+<span class="hljs-comment"># Install other dependencies</span>
+pip install -r requirements.txt
+</div></code></pre>
+<h3 id="3-prepare-pre-trained-models">3. Prepare Pre-trained Models</h3>
+<p>Download and place the following models in the <code>deps/</code> directory:</p>
+<pre class="hljs"><code><div>deps/
+├── sentence-t5-large/      # Sentence-T5 for text encoding
+├── clip-vit-large-patch14/ # CLIP model
+├── distilbert-base-uncased/
+├── glove/                  # GloVe word embeddings
+├── smpl/                   # SMPL model
+└── t2m/                    # Text-to-Motion evaluation model
+</div></code></pre>
+<h3 id="4-prepare-dataset">4. Prepare Dataset</h3>
+<p>Download HumanML3D or KIT-ML dataset and place in <code>datasets/</code> directory:</p>
+<pre class="hljs"><code><div>datasets/
+└── humanml3d/
+    ├── new_joint_vecs/
+    ├── new_joints/
+    ├── texts/
+    └── ...
+</div></code></pre>
+<h2 id="swanlab-logging">SwanLab Logging</h2>
+<p>This project uses <a href="https://swanlab.cn/">SwanLab</a> for experiment tracking and visualization.</p>
+<h3 id="setup-swanlab">Setup SwanLab</h3>
+<pre class="hljs"><code><div><span class="hljs-comment"># Install SwanLab</span>
+pip install swanlab
+
+<span class="hljs-comment"># Login to SwanLab (get API key from https://swanlab.cn/)</span>
+swanlab login
+</div></code></pre>
+<h3 id="view-training-logs">View Training Logs</h3>
+<p>After training starts, you can view real-time logs at:</p>
+<ul>
+<li><strong>SwanLab Dashboard</strong>: https://swanlab.cn/</li>
+</ul>
+<p>Logged metrics include:</p>
+<ul>
+<li><code>Train/loss</code>: Training loss per step</li>
+<li><code>Train/lr</code>: Learning rate</li>
+<li><code>Epoch/avg_loss</code>: Average loss per epoch</li>
+<li><code>Val/T2M_*</code>: Text-to-Motion retrieval metrics</li>
+<li><code>Val/M2T_*</code>: Motion-to-Text retrieval metrics</li>
+</ul>
+<h2 id="training">Training</h2>
+<h3 id="train-step-aware-reward-model-spm">Train Step-Aware Reward Model (SPM)</h3>
+<pre class="hljs"><code><div><span class="hljs-comment"># Train on HumanML3D dataset</span>
+bash run.sh 0 spm
+
+<span class="hljs-comment"># Or run directly with custom parameters</span>
+CUDA_VISIBLE_DEVICES=0 python -m ReAlignModule.train_spm \
+    --cfg configs/spm_t2m.yaml \
+    --NoiseThr 0.5 \
+    --maxT 1000 \
+    --step_aware M1T0 \
+    --CLThr 0.9 \
+    --CLTemp 0.1
+</div></code></pre>
+<p><strong>Key Parameters:</strong></p>
+<ul>
+<li><code>--NoiseThr</code>: Noise threshold for training (default: 0.5)</li>
+<li><code>--maxT</code>: Maximum timestep for noise scheduling (default: 1000)</li>
+<li><code>--step_aware</code>: Step-aware mode, options: <code>M1T0</code>, <code>M0T1</code>, <code>M1T1</code> (default: M1T0)</li>
+<li><code>--CLThr</code>: Contrastive learning threshold (default: 0.9)</li>
+<li><code>--CLTemp</code>: Contrastive learning temperature (default: 0.1)</li>
+</ul>
+<p>Checkpoints will be saved in <code>./checkpoints/spm/</code> directory.</p>
+<h2 id="evaluation">Evaluation</h2>
+<h3 id="evaluate-with-realign">Evaluate with ReAlign</h3>
+<pre class="hljs"><code><div><span class="hljs-comment"># Evaluate MLD with Step-Aware Reward Model</span>
+bash run.sh 0 <span class="hljs-built_in">eval</span>
+
+<span class="hljs-comment"># Or run directly</span>
+CUDA_VISIBLE_DEVICES=0 python -m <span class="hljs-built_in">test</span> \
+    --cfg configs/mld_t2m.yaml \
+    --lambda_t2m 100 \
+    --lambda_m2m 100 \
+    --spm_path /path/to/SPM_checkpoint.pth
+</div></code></pre>
+<p><strong>Key Parameters:</strong></p>
+<ul>
+<li><code>--spm_path</code>: Path to trained SPM checkpoint</li>
+<li><code>--lambda_t2m</code>: Weight for text-to-motion alignment (default: 100)</li>
+<li><code>--lambda_m2m</code>: Weight for motion-to-motion alignment (default: 100)</li>
+</ul>
+<h3 id="evaluate-tmr-retrieval">Evaluate TMR Retrieval</h3>
+<pre class="hljs"><code><div>bash run.sh 0 tmr
+</div></code></pre>
+<h2 id="rendering">Rendering</h2>
+<p>Convert generated motion to mesh for visualization:</p>
+<pre class="hljs"><code><div>python fit.py --pkl /path/to/motion.pkl --num_smplify_iters 150
+</div></code></pre>
+<h2 id="project-structure">Project Structure</h2>
+<pre class="hljs"><code><div>ReAlign/
+├── configs/                 # Configuration files
+│   ├── mld_t2m.yaml        # MLD model config
+│   ├── spm_t2m.yaml        # SPM training config
+│   └── modules/            # Module-specific configs
+├── ReAlignModule/          # ReAlign core module
+│   ├── train_spm.py        # SPM training script
+│   ├── eval_tmr.py         # TMR evaluation
+│   └── models/
+│       ├── spm.py          # Step-aware Reward Model
+│       └── utils.py        # Utility functions
+├── mld/                    # MLD base model
+├── datasets/               # Dataset directory
+├── deps/                   # Pre-trained dependencies
+├── checkpoints/            # Model checkpoints
+├── run.sh                  # Training/evaluation scripts
+├── test.py                 # Evaluation entry point
+└── fit.py                  # Motion to mesh fitting
+</div></code></pre>
+<h2 id="update-log">Update Log</h2>
+<h3 id="2025-12-15">2025-12-15</h3>
+<ul>
+<li><strong>Bug Fix</strong>: Fixed GPU memory leak issue in <code>train_spm.py</code>
+<ul>
+<li>Added <code>del</code> statements to explicitly release tensors after use</li>
+<li>Added <code>torch.cuda.empty_cache()</code> calls to free cached memory</li>
+<li>Prevents OOM errors during long training sessions</li>
+</ul>
+</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<pre class="hljs"><code><div>@inproceedings{wengReAlign26,
+  title={ReAlign: Text-to-Motion Generation via Step-Aware Reward-Guided Alignment}, 
+  author={Wanjiang Weng and Xiaofeng Tan and Junbo Wang and Guo-Sen Xie and Pan Zhou and Hongsong Wang},
+  year={2025},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence}
+}
+</div></code></pre>
+
+</body>
+
+</html>
