@@ -24,7 +24,7 @@
 
 > **TL;DR:** We propose **ReAlign**, a *plug-and-play reward-guided alignment strategy* for text-to-motion generation, which explicitly enhances both semantic consistency and motion realism throughout the denoising process.
 
-This repository offers the official Pytorch code for this paper. The code will be released before the conference of AAAI-26.
+This repository offers the official code for this paper. 
 
 
 If you have any questions, feel free to contact Wanjiang Weng (wjweng@seu.edu.cn) or Xiaofeng Tan (xiaofengtan@seu.edu.cn).
