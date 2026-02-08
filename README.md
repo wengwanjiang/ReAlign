@@ -27,6 +27,8 @@
 This repository offers the official code for this paper. If you have any questions, feel free to contact Wanjiang Weng (wjweng@seu.edu.cn) or Xiaofeng Tan (xiaofengtan@seu.edu.cn).
 
 ## 📣 News
+- **[2026/02]** [Abstract Paper Portal of AAAI 2026](https://hongsong-wang.github.io/AAAI2026_Abstract/)
+- **[2026/02]** Paper Portal for Top Conferences in the Field of Artificial intelligence: [CV_Paper_Portal](https://hongsong-wang.github.io/CV_Paper_Portal/)
 - **[2025/12]** The code has been released! 🚀
 - **[2025/11]** The paper has been publicly released.
 - **[2025/11]** **ReAlign** has been officially accepted by *AAAI 2026*! 🎉
