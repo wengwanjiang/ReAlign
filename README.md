@@ -89,17 +89,22 @@ pip install -r requirements.txt
 
 ### 3. Prepare Pre-trained Models
 
-Download and place the following models in the `deps/` directory:
+This project requires several pre-trained models for text encoding, motion evaluation, and mesh rendering. Place the downloaded assets in the `deps/` directory as follows:
+
+```text
+deps/
+├── sentence-t5-large/       # Sentence-T5: Used to extract sentence-level text features.
+├── clip-vit-large-patch14/  # CLIP model: Used to extract sentence-level text features.
+├── distilbert-base-uncased/ # DistilBERT: Used to extract sentence-level text features.
+├── glove/                   # GloVe word embeddings: Used by the T2M evaluator for word embedding retrieval.
+├── smpl/                    # SMPL model: Required for skinning skeleton-based figures onto human meshes.
+└── t2m/                     # Text-to-Motion evaluation weights
 
 ```
-deps/
-├── sentence-t5-large/      # Sentence-T5 for text encoding
-├── clip-vit-large-patch14/ # CLIP model
-├── distilbert-base-uncased/
-├── glove/                  # GloVe word embeddings
-├── smpl/                   # SMPL model
-└── t2m/                    # Text-to-Motion evaluation model
-```
+> For convenience, unified download links are provided below: [Baidu Netdisk](https://pan.baidu.com/s/1L1PffeqjWu6uLK8fb6gmfw?pwd=fpt2), [OneDrive](https://1drv.ms)
+
+> Disclaimer: These models are provided solely for academic research and non-profit purposes. We strictly adhere to copyright regulations. If any included assets are found to be infringing, please notify us, and they will be removed immediately.
+
 
 ### 4. Prepare Dataset
 
@@ -232,6 +237,15 @@ ReAlign/
   - Added `del` statements to explicitly release tensors after use
   - Added `torch.cuda.empty_cache()` calls to free cached memory
   - Prevents OOM errors during long training sessions
+
+
+
+
+### 4. Disclaimer
+Please note that this project is intended solely for academic research and is entirely non-profit. We strictly adhere to copyright regulations. All weight files are provided for research purposes only; if any included assets are found to be infringing, please notify us, and we will remove them immediately.
+
+We hope this information helps you set up the environment. If you have further questions or encounter any issues, please feel free to reach out.
+
 
 ## Citation
 
