@@ -53,7 +53,7 @@ This repository offers the official code for this paper. If you have any questio
     <td rowspan="2">Step-Aware Reward Model</td>
     <td>HumanML3D</td>
     <td>
-      <a href="https://1drv.ms/">OneDrive</a>,
+      <a href="https://1drv.ms/f/c/70b7af2ab29b610a/IgD28Af_v3TZRrTSCUifF9CMAWAYKH3FAsjhqsMqqzvi1vo?e=Cv4Lmf">OneDrive</a>,
       <a href="https://pan.baidu.com/s/1HHux8t_cCaENw9_ybrGIOg">BaiduNetDisk (passwd: 1234)</a>
     </td>
     <td>T2M: 67.59%, M2T: 68.94%</td>
@@ -61,7 +61,7 @@ This repository offers the official code for this paper. If you have any questio
   <tr>
     <td>KIT-ML</td>
     <td>
-      <a href="https://1drv.ms/">OneDrive</a>,
+      <a href="https://1drv.ms/f/c/70b7af2ab29b610a/IgD28Af_v3TZRrTSCUifF9CMAWAYKH3FAsjhqsMqqzvi1vo?e=Cv4Lmf">OneDrive</a>,
       <a href="https://pan.baidu.com/s/1HHux8t_cCaENw9_ybrGIOg">BaiduNetDisk (passwd: 1234)</a>
     </td>
     <td>T2M: 52.84%, M2T: 52.98%</td>
@@ -101,7 +101,7 @@ deps/
 └── t2m/                     # Text-to-Motion evaluation weights
 
 ```
-> For convenience, unified download links are provided below: [Baidu Netdisk](https://pan.baidu.com/s/1L1PffeqjWu6uLK8fb6gmfw?pwd=fpt2), [OneDrive](https://1drv.ms)
+> For convenience, unified download links are provided below: [Baidu Netdisk](https://pan.baidu.com/s/1L1PffeqjWu6uLK8fb6gmfw?pwd=fpt2), [OneDrive](https://1drv.ms/f/c/70b7af2ab29b610a/IgD28Af_v3TZRrTSCUifF9CMAWAYKH3FAsjhqsMqqzvi1vo?e=Cv4Lmf)
 
 > Disclaimer: These models are provided solely for academic research and non-profit purposes. We strictly adhere to copyright regulations. If any included assets are found to be infringing, please notify us, and they will be removed immediately.
 
